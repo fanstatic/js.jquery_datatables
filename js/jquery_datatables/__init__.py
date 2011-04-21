@@ -8,7 +8,7 @@ library = Library('jquery_datatables', 'resources')
 # resource1 = Resource(library, 'style.css')
 
 datatables = Resource(
-    datatables_lib, 'media/js/jquery.dataTables.js',
+    library, 'media/js/jquery.dataTables.js',
     depends=[jquery],
     minified='media/js/jquery.dataTables.min.js'
 )
