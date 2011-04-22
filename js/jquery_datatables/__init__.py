@@ -7,8 +7,14 @@ library = Library('jquery_datatables', 'resources')
 # For options and examples, see the fanstatic documentation.
 # resource1 = Resource(library, 'style.css')
 
-datatables = Resource(
+jquery_datatables_css = Resource(
+    library,
+    'media/css/demo_table_jui.css'
+)
+
+jquery_datatables = Resource(
     library, 'media/js/jquery.dataTables.js',
-    depends=[jquery],
+    depends=[jquery, jquery_datatables_css],
     minified='media/js/jquery.dataTables.min.js'
 )
+
