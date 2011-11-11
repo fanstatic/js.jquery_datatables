@@ -1,4 +1,4 @@
-from fanstatic import Library, Resource
+from fanstatic import Library, Resource, Group
 from js.jquery import jquery
 
 library = Library('jquery_datatables', 'resources')
@@ -12,9 +12,13 @@ jquery_datatables_css = Resource(
     'media/css/demo_table_jui.css'
 )
 
-jquery_datatables = Resource(
+jquery_datatables_js = Resource(
     library, 'media/js/jquery.dataTables.js',
-    depends=[jquery, jquery_datatables_css],
+    depends=[jquery],
     minified='media/js/jquery.dataTables.min.js'
+)
+
+jquery_datatables = Group(depends=[
+        jquery_datatables_css, jquery_datatables_js]
 )
 

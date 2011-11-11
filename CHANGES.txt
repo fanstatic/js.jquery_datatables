@@ -1,11 +1,13 @@
 CHANGES
 *******
 
-1.7.6-1 (unreleased)
-====================
+1.8.2 (unreleased)
+==================
 
-- Nothing changed yet.
+- Modified to make available ``jquery_datatables_js`` as a separate
+  resource that doesn't include the css by default.
 
+- Upgraded to datatables 1.8.2
 
 1.7.6 (2011-04-25)
 ==================
