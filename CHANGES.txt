@@ -1,7 +1,7 @@
 CHANGES
 *******
 
-1.8.2 (unreleased)
+1.8.2 (2011-11-11)
 ==================
 
 - Modified to make available ``jquery_datatables_js`` as a separate
