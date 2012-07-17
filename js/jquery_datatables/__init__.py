@@ -9,7 +9,7 @@ library = Library('jquery_datatables', 'resources')
 
 jquery_datatables_css = Resource(
     library,
-    'media/css/demo_table_jui.css'
+    'media/css/jquery.dataTables.css'
 )
 
 jquery_datatables_js = Resource(
@@ -21,4 +21,3 @@ jquery_datatables_js = Resource(
 jquery_datatables = Group(depends=[
         jquery_datatables_css, jquery_datatables_js]
 )
-
