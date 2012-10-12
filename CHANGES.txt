@@ -4,7 +4,7 @@ CHANGES
 1.9.4 (unreleased)
 ==================
 
-- Nothing changed yet.
+- Updated files to datatables version 1.9.4
 
 
 1.9.3 (2012-10-12)
