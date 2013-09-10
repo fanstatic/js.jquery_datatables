@@ -4,7 +4,7 @@ CHANGES
 1.9.4-1 (unreleased)
 ====================
 
-- Nothing changed yet.
+- Add included extras as fanstatic resources.
 
 
 1.9.4 (2012-10-12)
