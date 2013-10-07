@@ -72,8 +72,13 @@ scroller = Resource(
 table_tools_css = Resource(
     library, 'extras/TableTools/media/css/TableTools.css')
 
-table_tools = Resource(
+table_tools_js_zeroclipboard = Resource(
+    library, 'extras/TableTools/media/js/ZeroClipboard.js')
+
+table_tools_js = Resource(
     library, 'extras/TableTools/media/js/TableTools.js',
-    depends=[jquery_datatables_js, table_tools_css],
-    minified='extras/TableTools/media/js/TableTools.min.js')
+    minified='extras/TableTools/media/js/TableTools.min.js',
+    depends=[table_tools_js_zeroclipboard, jquery_datatables_js])
+
+table_tools = Group(depends=[table_tools_js, table_tools_css])
 
