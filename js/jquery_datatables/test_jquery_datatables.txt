@@ -13,6 +13,7 @@ these resources to be included on a page::
   >>> jt.fixed_columns.need()
   >>> jt.fixed_header.need()
   >>> jt.keytable.need()
+  >>> jt.responsive.need()
   >>> jt.scroller.need()
   >>> jt.table_tools.need()
 
