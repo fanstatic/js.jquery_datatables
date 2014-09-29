@@ -6,6 +6,9 @@ CHANGES
 
 - Updated files and initialization to Datatables 1.10.
 
+- Simplify the installation of the test runner in the buildout.cfg; the
+  old method failed on my machine.
+
 1.9.4-2 (unreleased)
 ====================
 
