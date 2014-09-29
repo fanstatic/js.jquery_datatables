@@ -1,8 +1,8 @@
 CHANGES
 *******
 
-1.10 (unreleased)
-====================
+1.10 (2014-09-29)
+=================
 
 - Updated files and initialization to Datatables 1.10.
 
