@@ -23,62 +23,73 @@ jquery_datatables = Group(depends=[
 )
 
 autofill_css = Resource(
-    library, 'extras/AutoFill/media/css/AutoFill.css')
+    library, 'extras/AutoFill/css/dataTables.autoFill.css')
 
 autofill = Resource(
-    library, 'extras/AutoFill/media/js/AutoFill.js',
+    library, 'extras/AutoFill/js/dataTables.autoFill.js',
     depends=[jquery_datatables_js, autofill_css],
-    minified='extras/AutoFill/media/js/AutoFill.min.js')
+    minified='extras/AutoFill/js/dataTables.autoFill.min.js')
 
 colreorder_css = Resource(
-    library, 'extras/ColReorder/media/css/ColReorder.css')
+    library, 'extras/ColReorder/css/dataTables.colReorder.css')
 
 colreorder = Resource(
-    library, 'extras/ColReorder/media/js/ColReorder.js',
+    library, 'extras/ColReorder/js/dataTables.colReorder.js',
     depends=[jquery_datatables_js, colreorder_css],
-    minified='extras/ColReorder/media/js/ColReorder.min.js')
+    minified='extras/ColReorder/js/dataTables.colReorder.min.js')
 
 colvis_css = Resource(
-    library, 'extras/ColVis/media/css/ColVis.css')
+    library, 'extras/ColVis/css/dataTables.colVis.css')
+
+colvis_jqueryui_css = Resource(
+    library, 'extras/ColVis/css/dataTables.colvis.jqueryui.css')
 
 colvis = Resource(
-    library, 'extras/ColVis/media/js/ColVis.js',
+    library, 'extras/ColVis/js/dataTables.colVis.js',
     depends=[jquery_datatables_js, colvis_css],
-    minified='extras/ColVis/media/js/ColVis.min.js')
+    minified='extras/ColVis/js/dataTables.colVis.min.js')
 
 fixed_columns = Resource(
-    library, 'extras/FixedColumns/media/js/FixedColumns.js',
+    library, 'extras/FixedColumns/js/dataTables.fixedColumns.js',
     depends=[jquery_datatables_js],
-    minified='extras/FixedColumns/media/js/FixedColumns.min.js')
+    minified='extras/FixedColumns/js/dataTables.fixedColumns.min.js')
 
 fixed_header = Resource(
-    library, 'extras/FixedHeader/js/FixedHeader.js',
+    library, 'extras/FixedHeader/js/dataTables.fixedHeader.js',
     depends=[jquery_datatables_js],
-    minified='extras/FixedHeader/js/FixedHeader.min.js')
+    minified='extras/FixedHeader/js/dataTables.fixedHeader.min.js')
+
+keytable_css = Resource(
+    library, 'extras/KeyTable/css/dataTables.keyTable.css')
 
 keytable = Resource(
-    library, 'extras/KeyTable/js/KeyTable.js',
-    depends=[jquery_datatables_js],
-    minified='extras/KeyTable/js/KeyTable.min.js')
+    library, 'extras/KeyTable/js/dataTables.keyTable.js',
+    depends=[jquery_datatables_js, keytable_css],
+    minified='extras/KeyTable/js/dataTables.keyTable.min.js')
+
+responsive_css = Resource(
+    library, 'extras/Responsive/css/dataTables.responsive.css')
+
+responsive = Resource(
+    library, 'extras/Responsive/js/dataTables.responsive.js',
+    depends=[jquery_datatables_js, responsive_css],
+    minified='extras/Responsive/js/dataTables.responsive.min.js')
 
 scroller_css = Resource(
-    library, 'extras/Scroller/media/css/dataTables.scroller.css')
+    library, 'extras/Scroller/css/dataTables.scroller.css')
 
 scroller = Resource(
-    library, 'extras/Scroller/media/js/dataTables.scroller.js',
+    library, 'extras/Scroller/js/dataTables.scroller.js',
     depends=[jquery_datatables_js, scroller_css],
-    minified='extras/Scroller/media/js/dataTables.scroller.min.js')
+    minified='extras/Scroller/js/dataTables.scroller.min.js')
 
 table_tools_css = Resource(
-    library, 'extras/TableTools/media/css/TableTools.css')
-
-table_tools_js_zeroclipboard = Resource(
-    library, 'extras/TableTools/media/js/ZeroClipboard.js')
+    library, 'extras/TableTools/css/dataTables.tableTools.css')
 
 table_tools_js = Resource(
-    library, 'extras/TableTools/media/js/TableTools.js',
-    minified='extras/TableTools/media/js/TableTools.min.js',
-    depends=[table_tools_js_zeroclipboard, jquery_datatables_js])
+    library, 'extras/TableTools/js/dataTables.tableTools.js',
+    minified='extras/TableTools/js/dataTables.tableTools.min.js',
+    depends=[jquery_datatables_js, table_tools_css])
 
 table_tools = Group(depends=[table_tools_js, table_tools_css])
 
