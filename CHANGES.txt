@@ -4,8 +4,7 @@ CHANGES
 1.11 (unreleased)
 =================
 
-- Nothing changed yet.
-
+- Update to 1.10.7.
 
 1.10 (2014-09-29)
 =================
